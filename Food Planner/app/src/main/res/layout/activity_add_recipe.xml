@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_recipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.teambazomi.mealplanner.AddRecipe">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/title"
+            android:hint="Recipe Name" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/ingredient"
+                android:hint="Ingredient"
+                android:layout_weight="0.88" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="#"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:layout_width="49dp"
+                android:layout_height="44dp"
+                android:id="@+id/measurementType" />
+
+            <Button
+                android:id="@+id/add_ingredient"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:text="+" />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/recipe_instructions"
+            android:hint="Optional Insrtuctions" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.11">
+
+            <TextView
+                android:text="Ingredients:"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredients_list_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/ingredientsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:scrollbars="vertical"
+            android:id = "@+id/ingredients_list"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Add to My Recipes"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/add_recipe"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

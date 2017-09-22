@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shopping_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.teambazomi.mealplanner.ShoppingList"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/shoplist_ingredient"
+                android:hint="Ingredient"
+                android:layout_weight="0.45" />
+
+            <EditText
+                android:id="@+id/shoplist_amount"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="  #"
+                android:inputType="numberDecimal"
+                android:layout_weight="0.04" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:id="@+id/shoplist_measurementType"
+                android:layout_weight="0.42" />
+
+            <Button
+                android:id="@+id/shoplist_add_ingredient"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Shopping List:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <TextView
+                android:id="@+id/shopCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="372dp"
+            android:scrollbars="vertical"
+            android:id = "@+id/shopping_list"
+             />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Meal Planner</string>
+
+    // measurement types: lb, oz, g, kg, cup, pint, quart, gallon, tsp, tbsp
+    <string-array name="measurements_array">
+        <item>unit(s)</item>
+        <item>lb</item>
+        <item>oz</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>tsp</item>
+        <item>tbsp</item>
+        <item>c</item>
+        <item>pt</item>
+        <item>qt</item>
+        <item>gal</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="menu_title">Navigation Menu</string>
+    <string name="action_settings">Settings</string>
+</resources>

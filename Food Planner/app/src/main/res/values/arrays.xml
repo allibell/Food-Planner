@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_items">
+        <item>Add Recipe</item>
+        <item>Meal Plan</item>
+        <item>My Recipes</item>
+        <item>Shopping List</item>
+    </string-array>
+</resources>
