@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by sol on 1/5/2017.
+ * Created by sol on 6/5/2017.
  */
 
 public class RecipeListAdapter extends RecyclerView.Adapter<RecipeListAdapter.ViewHolder> implements ItemTouchHelperAdapter {
