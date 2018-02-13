@@ -2,11 +2,8 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.teambazomi.mealplanner"
-        minSdkVersion 16
-        targetSdkVersion 25
+        applicationId "com.mealplanner"
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -20,8 +17,7 @@ android {
 }
 
 repositories {
-    jcenter()
-    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    
 }
 
 dependencies {
