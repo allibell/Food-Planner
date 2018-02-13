@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <meta-data android:name="AA_DB_NAME" android:value="MealPlanner.db" />
+        <meta-data android:name="AA_DB_NAME" android:value="FoodPlanner.db" />
         <meta-data android:name="AA_DB_VERSION" android:value="5" />
         <meta-data android:name="AA_SERIALIZERS"
             android:value="my.package.CustomTypeSerializer,my.package.AnotherCustomeTypeSerializer" />
